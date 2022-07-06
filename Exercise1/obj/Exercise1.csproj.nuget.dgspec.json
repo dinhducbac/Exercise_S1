@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.Net_Core_Exercises\\Exercise1\\Exercise1\\Exercise1.csproj": {}
+    "D:\\.Net_Core_Exercises\\Exercise1\\Exercise_S1\\Exercise1\\Exercise1.csproj": {}
   },
   "projects": {
-    "D:\\.Net_Core_Exercises\\Exercise1\\Exercise1\\Exercise1.csproj": {
+    "D:\\.Net_Core_Exercises\\Exercise1\\Exercise_S1\\Exercise1\\Exercise1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise1\\Exercise1.csproj",
+        "projectUniqueName": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise_S1\\Exercise1\\Exercise1.csproj",
         "projectName": "Exercise1",
-        "projectPath": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise1\\Exercise1.csproj",
+        "projectPath": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise_S1\\Exercise1\\Exercise1.csproj",
         "packagesPath": "C:\\Users\\BacDucDinh\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise1\\obj\\",
+        "outputPath": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise_S1\\Exercise1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BacDucDinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
