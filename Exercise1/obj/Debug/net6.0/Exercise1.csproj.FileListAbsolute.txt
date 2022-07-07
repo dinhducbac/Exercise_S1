@@ -28,3 +28,11 @@ D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\obj\Debug\net6.0\refint\E
 D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\obj\Debug\net6.0\Exercise1.pdb
 D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\obj\Debug\net6.0\Exercise1.genruntimeconfig.cache
 D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\obj\Debug\net6.0\ref\Exercise1.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.Http.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\.Net_Core_Exercises\Exercise1\Exercise_S1\Exercise1\obj\Debug\net6.0\Exercise1.csproj.CopyComplete

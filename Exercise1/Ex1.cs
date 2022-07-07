@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +11,6 @@ namespace Exercise1
     public class Ex1
     {
         public string sSportCar = "";
-        public List<SportCar> listSportCar;
         public Ex1()
         {
             var lstSportCar = new List<SportCar>()
@@ -20,24 +21,44 @@ namespace Exercise1
                 new SportCar("TOYOTA",180,"RED"),
                 new SportCar("BUGATI",300,"BROWN")
             };
-            Init(lstSportCar);
+            //Task.Run(async () => await Init(lstSportCar));
+            //Init(lstSportCar);
         }
-        public async void Init(List<SportCar> sportCars)
+        public async Task Init(List<SportCar> sportCars)
         {
-            var lst = await GetStrongerSportCar(sportCars);
             sSportCar += $"Count total: {Count(sportCars)}\n";
-            sSportCar += $"Count LAMBOGINI: {Count("LAMBOGINI",sportCars)}\n";
-            sSportCar += "Sport car has hourse power >= 200\n";
-            foreach (var o in lst)
-            {
-                sSportCar += $"TRADEMARK: {o.tradeMark}, HOURSEPOWER: {o.hoursePower}, COLOR: {o.GetColor()}\n";
-            }
-        } 
-        public async Task<List<SportCar>> GetStrongerSportCar(List<SportCar> lstSportCar)
+            sSportCar += $"Count LAMBOGINI: {Count("LAMBOGINI", sportCars)}\n";
+            var timer = new Stopwatch();
+            timer.Start();
+            Task<string> t1 = ExampleTask();
+            Task<string> t2 = ExampleTask();
+            Task<string> t3 = ExampleTask();
+            await Task.WhenAll(t1, t2, t3);
+            timer.Stop();
+            TimeSpan timeTaken = timer.Elapsed;
+            sSportCar += $"Time taken: {timeTaken.ToString(@"m\:ss\.fff")}\n";
+            sSportCar += $"Result: {t1.Result},\n {t2.Result}, \n{t3.Result}\n";
+        }
+
+        public static async Task<string> ExampleTask()
         {
-            return (from l in lstSportCar
-                    where l.hoursePower >= 200
-                    select l).ToList();
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("https://catfact.ninja");
+                    using var responseMessage = await client.GetAsync("/fact");
+                    var content = responseMessage.Content.ReadAsStringAsync();
+                    //Console.WriteLine(content.Result.ToString());
+                    //return "";
+                    return content.Result.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return "";
         }
         public int Count(List<SportCar> lstSportCar)
         {
@@ -45,7 +66,7 @@ namespace Exercise1
         }
         public int Count(string tradeMark, List<SportCar> lstSportCar)
         {
-            return lstSportCar.Where(p=>p.tradeMark == tradeMark).Count();
+            return lstSportCar.Where(p => p.tradeMark == tradeMark).Count();
         }
         public class Car
         {
@@ -59,7 +80,7 @@ namespace Exercise1
         {
             public int hoursePower { get; set; }
             private string Color { get; set; }
-            public SportCar(string tradeMark,int hoursePower,string color)
+            public SportCar(string tradeMark, int hoursePower, string color)
             {
                 this.tradeMark = tradeMark;
                 this.hoursePower = hoursePower;

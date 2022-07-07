@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "h8TkRByoT2gImb3LNOfeeR95VojydWbeNalGXVREDiKDfcvn4TIF81jEGVYOz+E1M1p35H55hkrRNLPkG/P/tg==",
+  "dgSpecHash": "pz0YCehYGAmrd0KLi0i6/1uJ77eMBizM8zJTPy1WHwn62/9+TI+2CJeZpfvhwjiHzDSzLLNPxfZj///KPww9+g==",
   "success": true,
   "projectFilePath": "D:\\.Net_Core_Exercises\\Exercise1\\Exercise_S1\\Exercise1\\Exercise1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.http\\6.0.0\\microsoft.extensions.http.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\BacDucDinh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
