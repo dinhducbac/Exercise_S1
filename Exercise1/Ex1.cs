@@ -37,11 +37,18 @@ namespace Exercise1
         public class Car
         {
             public string tradeMark { get; set; }
+            public virtual void Get()
+            {
+
+            }
         }
         public class SportCar : Car
         {
             public int hoursePower { get; set; }
-
+            public override void Get()
+            {
+                
+            }
         }
     }
 }
