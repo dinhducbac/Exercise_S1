@@ -34,10 +34,19 @@ namespace Exercise1
             Task<string> t2 = ExampleTask();
             Task<string> t3 = ExampleTask();
             await Task.WhenAll(t1, t2, t3);
+            sSportCar += $"Result: {t1.Result},\n\t {t2.Result}, \n\t{t3.Result}\n";
             timer.Stop();
             TimeSpan timeTaken = timer.Elapsed;
             sSportCar += $"Time taken: {timeTaken.ToString(@"m\:ss\.fff")}\n";
-            sSportCar += $"Result: {t1.Result},\n {t2.Result}, \n{t3.Result}\n";
+            timer.Start();
+            string t4 = await ExampleTask();
+            string t5 = await ExampleTask();
+            string t6 = await ExampleTask();
+            timer.Stop();
+            timeTaken = timer.Elapsed;
+            sSportCar += $"Result: {t4},\n\t {t5}, \n\t{t6}\n";
+            sSportCar += $"Time taken: {timeTaken.ToString(@"m\:ss\.fff")}\n";
+            
         }
 
         public static async Task<string> ExampleTask()
